@@ -1,280 +1,233 @@
 export const siteConfig = {
-	name: 'Engineering Portfolio',
+	name: 'Shreya Powar',
 	description:
-		'A professional portfolio website template for engineering students.',
+		'Portfolio of a Data Science student showcasing AI, web development, and real-world projects.',
 	mainNav: [
-		{
-			title: 'Home',
-			href: '/',
-		},
-		{
-			title: 'About',
-			href: '/about',
-		},
-		{
-			title: 'Education',
-			href: '/education',
-		},
-		{
-			title: 'Skills',
-			href: '/skills',
-		},
-		{
-			title: 'Experience',
-			href: '/experience',
-		},
-		{
-			title: 'Projects',
-			href: '/projects',
-		},
-		{
-			title: 'Certificates',
-			href: '/certificates',
-		},
-		{
-			title: 'Blog',
-			href: '/blog',
-		},
-		{
-			title: 'Contact',
-			href: '/contact',
-		},
+		{ title: 'Home', href: '/' },
+		{ title: 'About', href: '/about' },
+		{ title: 'Education', href: '/education' },
+		{ title: 'Skills', href: '/skills' },
+		{ title: 'Experience', href: '/experience' },
+		{ title: 'Projects', href: '/projects' },
+		{ title: 'Certificates', href: '/certificates' },
+		{ title: 'Contact', href: '/contact' },
 	],
 	links: {
-		github: 'https://github.com/yourusername',
-		linkedin: 'https://linkedin.com/in/yourusername',
-		twitter: 'https://twitter.com/yourusername',
-		facebook: 'https://facebook.com/yourusername',
-		instagram: 'https://instagram.com/yourusername',
-		whatsapp: 'https://wa.me/yourphonenumber',
-		email: 'mailto:youremail@example.com',
-		phone: 'tel:+1234567890',
-	},
+	github: 'https://github.com/Shreyapowar9961',
+	linkedin: 'https://linkedin.com/in/shreya-powar-447007299',
+	whatsapp: 'https://wa.me/919834460012',
+	email: 'mailto:shreyapowar598@gmail.com',
+	phone: 'tel:+919834460012',
+},
 };
 
-export type Experience = {
-	title: string;
-	company: string;
-	location: string;
-	startDate: string;
-	endDate: string;
-	description: string[];
-	technologies: string[];
-};
+/* ================= EXPERIENCE ================= */
 
-export const experiences: Experience[] = [
+export const experiences = [
 	{
-		title: 'Engineering Intern',
-		company: 'Tech Company',
-		location: 'City, Country',
-		startDate: 'May 2023',
-		endDate: 'Aug 2023',
+		title: 'Web Development Intern',
+		company: 'Prodigy Infotech',
+		location: 'Remote',
+		startDate: 'Jul 2025',
+		endDate: 'Aug 2025',
 		description: [
-			'Worked on developing and testing software components for embedded systems',
-			'Collaborated with senior engineers on project planning and execution',
-			'Implemented test procedures for quality assurance',
+			'Developed responsive web applications using HTML, CSS, and JavaScript',
+			'Built interactive UI components to enhance user experience',
+			'Collaborated with team members to complete project milestones',
 		],
-		technologies: ['C++', 'Python', 'MATLAB', 'Git'],
+		technologies: ['HTML', 'CSS', 'JavaScript'],
 	},
 	{
-		title: 'Research Assistant',
-		company: 'University Lab',
-		location: 'City, Country',
-		startDate: 'Jan 2023',
-		endDate: 'Apr 2023',
+		title: 'C++ Programming Intern',
+		company: 'CodSoft',
+		location: 'Remote',
+		startDate: 'Aug 2024',
+		endDate: 'Sep 2024',
 		description: [
-			'Assisted in research focusing on advanced materials for mechanical applications',
-			'Conducted literature reviews and compiled research findings',
-			'Performed data analysis and visualization of experimental results',
+			'Developed console-based applications like calculators and games',
+			'Applied object-oriented programming concepts',
+			'Improved debugging and problem-solving skills',
 		],
-		technologies: ['MATLAB', 'CAD', 'Data Analysis', 'Python'],
+		technologies: ['C++'],
 	},
 ];
 
-export type Project = {
-	title: string;
-	description: string;
-	image: string;
-	tags: string[];
-	link?: string;
-	repo?: string;
-};
+/* ================= PROJECTS ================= */
 
-export const projects: Project[] = [
+export const projects = [
 	{
-		title: 'Smart Home Automation System',
+		title: 'AI-Based Leaf Disease Detection',
 		description:
-			'Designed and implemented a smart home automation system using IoT technologies to control lighting, temperature, and security features.',
-		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
-		tags: ['IoT', 'Arduino', 'C++', 'Mobile App'],
-		link: '#',
-		repo: '#',
+			'Developed a CNN-based model to detect plant leaf diseases with high accuracy using deep learning techniques.',
+		image: 'https://images.pexels.com/photos/4505161/pexels-photo-4505161.jpeg',
+		tags: ['Python', 'TensorFlow', 'Keras', 'OpenCV'],
+		link: '',
+		repo: 'https://github.com/Shreyapowar9961/-Ai-based-leaf-diseases-detection-of-grape-wine-cnn-model-',
 	},
 	{
-		title: 'Structural Analysis Software',
+		title: 'Creative Cart – Artisan Marketplace',
 		description:
-			'Developed software for structural analysis of beams and trusses using numerical methods and visualization techniques.',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
-		tags: ['MATLAB', 'Python', 'FEA', 'Structural Engineering'],
-		link: '#',
-		repo: '#',
+			'Built a full-stack e-commerce platform for artisans with authentication, cart, wishlist, and checkout features.',
+		image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
+		tags: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+		link: '',
+		repo: 'https://github.com/Shreyapowar9961/KreativeCartOnlineMarketplaceforLocalMaharashtrianArtisans-', // 👉 add real repo if available
 	},
 	{
-		title: 'Renewable Energy Monitoring',
+		title: 'EduForum – Discussion Platform',
 		description:
-			'Created a system to monitor and analyze performance of solar panels and wind turbines for optimal energy production.',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
-		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
-		link: '#',
-		repo: '#',
+			'Developed a web platform for students to ask questions and collaborate through discussion threads.',
+		image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg',
+		tags: ['HTML', 'CSS', 'JavaScript'],
+		link: '',
+		repo: 'https://github.com/Miniprojectg17/Eduforum_Final', // 👉 update if needed
 	},
+	{
+		title: 'CrowdCivic – Civic Issue Reporting',
+		description:
+			'Created a platform for reporting local issues with image upload and admin dashboard for tracking.',
+		image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg',
+		tags: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+		link: '',
+		repo: 'https://github.com/Shreyapowar9961/Synergy_Circle', // 👉 update if needed
+	},
+	{
+	title: 'Smart Document Classifier',
+	description:
+		'Built an AI-based document classification system using machine learning and FastAPI to automatically categorize documents into predefined classes.',
+	image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
+	tags: ['Python', 'Machine Learning', 'FastAPI', 'NLP'],
+	link: '',
+	repo: 'https://github.com/Shreyapowar9961/smart-doc-classifier'
+},
+{
+  title: 'Mandi Connect – Agricultural Marketplace',
+  description:
+    'Developed a web-based platform to connect farmers directly with buyers, improving transparency, accessibility, and efficiency in agricultural trade. Built during HackAura 2026 with real-time product listings and communication features.',
+  image: 'https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg',
+  tags: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+  link: '',
+  repo: 'https://github.com/Miniprojectg17/mandi-connect'
+}
 ];
+/* ================= EDUCATION ================= */
 
-export type Education = {
-	degree: string;
-	field: string;
-	institution: string;
-	location: string;
-	startDate: string;
-	endDate: string;
-	gpa?: string;
-	achievements: string[];
-};
-
-export const education: Education[] = [
+export const education = [
 	{
-		degree: 'Bachelor of Science',
-		field: 'Mechanical Engineering',
-		institution: 'University Name',
-		location: 'City, Country',
-		startDate: 'Sep 2020',
+		degree: 'Bachelor of Technology',
+		field: 'Computer Science & Engineering (Data Science)',
+		institution: 'Kolhapur Institute of Technology’s College of Engineering',
+		location: 'Kolhapur, India',
+		startDate: '2023',
 		endDate: 'Present',
-		gpa: '3.8/4.0',
+		gpa: '8.71/10',
 		achievements: [
-			'Dean\'s List (All Semesters)',
-			'Academic Excellence Scholarship',
-			'Senior Design Project Award',
+			'Maintaining a CGPA of 8.71',
+			'Published research paper in IJSREM Journal (2025)',
+			'Vice President – ACADS Student Departmental Club (2025–26)',
+			'Design Associate – ACADS Student Departmental Club (2024–25)',
 		],
 	},
 	{
-		degree: 'High School Diploma',
-		field: 'Science and Mathematics',
-		institution: 'High School Name',
-		location: 'City, Country',
-		startDate: 'Sep 2016',
-		endDate: 'Jun 2020',
-		gpa: '4.0/4.0',
+		degree: 'Higher Secondary Certificate (HSC)',
+		field: 'Science',
+		institution: 'Chate Jr. College of Science',
+		location: 'Kolhapur, India',
+		startDate: '2021',
+		endDate: '2023',
+		gpa: '80%',
 		achievements: [
-			'Valedictorian',
-			'National Mathematics Competition Finalist',
-			'Science Fair Gold Medal',
+			'Strong foundation in PCM subjects',
+			'Developed analytical thinking skills',
+		],
+	},
+	{
+		degree: 'Secondary School Certificate (SSC)',
+		field: 'General Education',
+		institution: 'Holyden English Medium School',
+		location: 'Kagal, India',
+		startDate: '2020',
+		endDate: '2021',
+		gpa: '87%',
+		achievements: [
+			'Scored 87% in board exams',
+			'Built strong academic fundamentals',
 		],
 	},
 ];
 
-export type Certificate = {
-	title: string;
-	issuer: string;
-	date: string;
-	id?: string;
-	url?: string;
-	pdf?: string;
-};
+/* ================= CERTIFICATES ================= */
 
-export const certificates: Certificate[] = [
+export const certificates = [
 	{
-		title: 'Engineering Professional Certification',
-		issuer: 'Professional Engineering Association',
-		date: 'Nov 2023',
-		id: 'CERT-12345',
-		url: '#',
-		pdf: '/certificates/sample.pdf',
+		title: 'Generative AI Leader Track',
+		issuer: 'Google Cloud Career Launchpad',
+		date: '2025',
 	},
 	{
-		title: 'CAD Design Specialist',
-		issuer: 'Autodesk',
-		date: 'Jun 2023',
-		id: 'CERT-67890',
-		url: '#',
-		pdf: '/certificates/sample.pdf',
+		title: ' Google DeepMind AI Research Foundations track ',
+		issuer: 'Google Cloud Career Launchpad',
+		date: '2026',
 	},
 	{
-		title: 'Project Management Fundamentals',
-		issuer: 'Project Management Institute',
-		date: 'Mar 2023',
-		id: 'CERT-24680',
-		url: '#',
-		pdf: '/certificates/sample.pdf',
+		title: 'Research Publication – Online Marketplace for Artisans',
+		issuer: 'International Journal of Scientific Research in Engineering & Management (IJSREM)',
+		date: 'May 2025',
+	},
+	{
+		title: 'Second Runner-Up – Creative Cart Project',
+		issuer: 'PBL Competition',
+		date: '2025',
+	},
+	{
+	title: 'HACKERA National Level Hackathon Participation',
+	issuer: 'Sanjay Ghodawat University, Kolhapur',
+	date: '2026',
+},
+	{
+		title: 'HackAura 2026 – Mandi Connect Project',
+		issuer: 'Somasekhar R. Kothiwale Institute of Technology',
+		date: '2026',
+	},
+	{
+		title: 'INVENTRA-2K25 National Hackathon',
+		issuer: 'KLE College of Engineering & Technology, Chikodi',
+		date: '2025',
+	},
+	{
+		title: 'Bharatiya Antariksh Hackathon',
+		issuer: 'ISRO Collaboration',
+		date: '2025',
 	},
 ];
+/* ================= SKILLS ================= */
 
-export type Skill = {
-	name: string;
-	level: number; // 1-10
-	category: 'technical' | 'software' | 'soft' | 'language';
-};
+export const skills = [
+	// Technical
+	{ name: 'Machine Learning', level: 8, category: 'technical' },
+	{ name: 'Data Analysis', level: 8, category: 'technical' },
+	{ name: 'Deep Learning (CNN)', level: 7, category: 'technical' },
 
-export const skills: Skill[] = [
-	// Technical Skills
-	{ name: 'Mechanical Design', level: 9, category: 'technical' },
-	{ name: 'Structural Analysis', level: 8, category: 'technical' },
-	{ name: 'Thermodynamics', level: 7, category: 'technical' },
-	{ name: 'Control Systems', level: 8, category: 'technical' },
-	{ name: 'Circuit Design', level: 6, category: 'technical' },
+	// Programming
+	{ name: 'Python', level: 8, category: 'software' },
+	{ name: 'C++', level: 7, category: 'software' },
+	{ name: 'Java', level: 7, category: 'software' },
+	{ name: 'JavaScript', level: 8, category: 'software' },
 
-	// Software Skills
-	{ name: 'MATLAB', level: 9, category: 'software' },
-	{ name: 'AutoCAD', level: 8, category: 'software' },
-	{ name: 'SolidWorks', level: 9, category: 'software' },
-	{ name: 'Python', level: 7, category: 'software' },
-	{ name: 'C++', level: 6, category: 'software' },
-	{ name: 'ANSYS', level: 8, category: 'software' },
+	// Web
+	{ name: 'HTML', level: 9, category: 'software' },
+	{ name: 'CSS', level: 8, category: 'software' },
+	{ name: 'Node.js', level: 7, category: 'software' },
+	{ name: 'Firebase', level: 8, category: 'software' },
 
 	// Soft Skills
 	{ name: 'Problem Solving', level: 9, category: 'soft' },
-	{ name: 'Team Leadership', level: 8, category: 'soft' },
-	{ name: 'Project Management', level: 7, category: 'soft' },
-	{ name: 'Technical Writing', level: 8, category: 'soft' },
-	{ name: 'Presentation', level: 7, category: 'soft' },
+	{ name: 'Teamwork', level: 9, category: 'soft' },
+	{ name: 'Leadership', level: 8, category: 'soft' },
+	{ name: 'Communication', level: 8, category: 'soft' },
 
 	// Languages
-	{ name: 'English', level: 10, category: 'language' },
-	{ name: 'Spanish', level: 6, category: 'language' },
-	{ name: 'French', level: 4, category: 'language' },
-];
-
-export type BlogPost = {
-	title: string;
-	excerpt: string;
-	date: string;
-	author: string;
-	image: string;
-	slug: string;
-};
-
-export const blogPosts: BlogPost[] = [
-	{
-		title: 'Advances in Renewable Energy Technologies',
-		excerpt: 'Exploring the latest innovations in renewable energy and their impact on sustainable development.',
-		date: 'Mar 15, 2024',
-		author: 'Your Name',
-		image: 'https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg',
-		slug: 'advances-in-renewable-energy',
-	},
-	{
-		title: 'The Future of Robotics in Manufacturing',
-		excerpt: 'How robotics and automation are revolutionizing the manufacturing industry and creating new opportunities.',
-		date: 'Feb 22, 2024',
-		author: 'Your Name',
-		image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
-		slug: 'future-of-robotics-manufacturing',
-	},
-	{
-		title: 'Sustainable Building Materials in Modern Construction',
-		excerpt: 'An analysis of eco-friendly building materials and their applications in contemporary architecture.',
-		date: 'Jan 10, 2024',
-		author: 'Your Name',
-		image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg',
-		slug: 'sustainable-building-materials',
-	},
+	{ name: 'English', level: 9, category: 'language' },
+	{ name: 'Hindi', level: 9, category: 'language' },
+	{ name: 'Marathi', level: 10, category: 'language' },
 ];

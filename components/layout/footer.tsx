@@ -1,5 +1,7 @@
+'use client';
+
 import Link from 'next/link';
-import { Linkedin, Github, Twitter, Facebook, Instagram, Phone, Mail, MessageSquare } from 'lucide-react';
+import { Linkedin, Github, Phone, Mail, MessageSquare } from 'lucide-react';
 
 import { siteConfig } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
@@ -14,9 +16,6 @@ export function Footer() {
 		{ icon: <Linkedin className="h-5 w-5" />, href: siteConfig.links.linkedin, label: 'LinkedIn' },
 		{ icon: <Github className="h-5 w-5" />, href: siteConfig.links.github, label: 'GitHub' },
 		{ icon: <MessageSquare className="h-5 w-5" />, href: siteConfig.links.whatsapp, label: 'WhatsApp' },
-		{ icon: <Twitter className="h-5 w-5" />, href: siteConfig.links.twitter, label: 'Twitter' },
-		{ icon: <Facebook className="h-5 w-5" />, href: siteConfig.links.facebook, label: 'Facebook' },
-		{ icon: <Instagram className="h-5 w-5" />, href: siteConfig.links.instagram, label: 'Instagram' },
 	];
 
 	const navColumns = [
@@ -39,9 +38,8 @@ export function Footer() {
 		{
 			title: 'Connect',
 			links: [
-				{ title: 'Blog', href: '/blog' },
 				{ title: 'Contact', href: '/contact' },
-				{ title: 'Resume', href: '#', download: true },
+				{ title: 'Resume', href: '/resume.pdf', download: true },
 			],
 		},
 	];
@@ -50,17 +48,20 @@ export function Footer() {
 		<footer className="bg-card py-12 border-t">
 			<div className="container px-4 mx-auto">
 				<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+					{/* Left Section */}
 					<div className="md:col-span-1">
 						<Link href="/" className="inline-block">
-							<span className="text-2xl font-bold text-gradient">Portfolio</span>
+							<span className="text-2xl font-bold text-gradient">Shreya Powar</span>
 						</Link>
 						<p className="mt-4 text-sm text-muted-foreground">
-							A professional portfolio showcasing my skills, projects, and achievements in engineering.
+							A Data Science student showcasing projects, skills, and achievements in AI & Web Development.
 						</p>
+
 						<div className="mt-6 flex flex-wrap gap-3">
 							{socialLinks.map((link, index) => (
 								<Button key={index} size="icon" variant="outline" asChild>
-									<Link href={link.href} aria-label={link.label} target="_blank" rel="noreferrer">
+									<Link href={link.href} aria-label={link.label} target="_blank">
 										{link.icon}
 									</Link>
 								</Button>
@@ -68,6 +69,7 @@ export function Footer() {
 						</div>
 					</div>
 
+					{/* Navigation */}
 					<div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-8">
 						{navColumns.map((column, index) => (
 							<div key={index}>
@@ -94,16 +96,8 @@ export function Footer() {
 
 				<div className="flex flex-col sm:flex-row items-center justify-between text-sm">
 					<p className="text-muted-foreground">
-						© {currentYear} Engineering Portfolio. All rights reserved.
+						© {currentYear} Shreya Powar. All rights reserved.
 					</p>
-					<div className="mt-4 sm:mt-0 flex gap-4">
-						<Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
-							Privacy Policy
-						</Link>
-						<Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors">
-							Terms of Service
-						</Link>
-					</div>
 				</div>
 			</div>
 		</footer>
