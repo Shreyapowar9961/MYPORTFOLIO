@@ -62,7 +62,7 @@ export const projects = [
 		image: 'https://images.pexels.com/photos/4505161/pexels-photo-4505161.jpeg',
 		tags: ['Python', 'TensorFlow', 'Keras', 'OpenCV'],
 		link: '',
-		repo: 'https://github.com/Shreyapowar9961/-Ai-based-leaf-diseases-detection-of-grape-wine-cnn-model-',
+		repo: 'https://vineguard-996566698792.asia-south1.run.app/',
 	},
 	{
 		title: 'Creative Cart – Artisan Marketplace',
@@ -71,7 +71,7 @@ export const projects = [
 		image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
 		tags: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
 		link: '',
-		repo: 'https://github.com/Shreyapowar9961/KreativeCartOnlineMarketplaceforLocalMaharashtrianArtisans-', // 👉 add real repo if available
+		repo: 'https://kreativecart-e1096.web.app', // 👉 add real repo if available
 	},
 	{
 		title: 'EduForum – Discussion Platform',
@@ -80,7 +80,7 @@ export const projects = [
 		image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg',
 		tags: ['HTML', 'CSS', 'JavaScript'],
 		link: '',
-		repo: 'https://github.com/Miniprojectg17/Eduforum_Final', // 👉 update if needed
+		repo: 'https://eduform-opal.vercel.app/', // 👉 update if needed
 	},
 	{
 		title: 'CrowdCivic – Civic Issue Reporting',

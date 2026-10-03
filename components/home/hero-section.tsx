@@ -106,14 +106,14 @@ export function HeroSection() {
 
 						{/* View Resume */}
 						<Button size="lg" variant="outline" asChild>
-							<a href="/resume.pdf" target="_blank">
+							<a href="/KIT'SResume_Shreya Powar CSEDS.pdf" target="_blank">
 								View Resume
 							</a>
 						</Button>
 
 						{/* Download Resume */}
 						<Button size="lg" asChild>
-							<a href="/resume.pdf" download>
+							<a href="/KIT'SResume_Shreya Powar CSEDS.pdf" download>
 								Download Resume <FileDown className="ml-2 h-4 w-4" />
 							</a>
 						</Button>

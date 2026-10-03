@@ -57,7 +57,7 @@ export default function AboutPage() {
 
 						{/* Resume Button */}
 						<Button className="mt-6" asChild>
-							<a href="/resume.pdf" download>
+							<a href="/KIT'SResume_Shreya Powar CSEDS.pdf" download>
 								Download Resume <ArrowDownCircle className="ml-2 h-4 w-4" />
 							</a>
 						</Button>
