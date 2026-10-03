@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Github } from 'lucide-react';
+import { ArrowRight, Github, ExternalLink } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -68,8 +68,19 @@ export function ProjectsPreview() {
 									</div>
 								</CardContent>
 
-								{/* Repo Button */}
-								<CardFooter className="p-6 pt-0">
+								{/* Buttons */}
+								<CardFooter className="p-6 pt-0 flex flex-wrap gap-3">
+									{project.link && (
+										<a
+											href={project.link}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-md hover:opacity-90 transition cursor-pointer z-10"
+										>
+											<ExternalLink className="h-4 w-4" />
+											Visit Website
+										</a>
+									)}
 									{project.repo && (
 										<a
 											href={project.repo}
@@ -78,7 +89,7 @@ export function ProjectsPreview() {
 											className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium border rounded-md hover:bg-muted transition cursor-pointer z-10"
 										>
 											<Github className="h-4 w-4" />
-											View Repo
+											View Repository
 										</a>
 									)}
 								</CardFooter>
