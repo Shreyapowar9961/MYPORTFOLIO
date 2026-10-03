@@ -106,7 +106,7 @@ export function HeroSection() {
 
 						{/* View Resume */}
 						<Button size="lg" variant="outline" asChild>
-							<a href="/KIT'SResume_Shreya Powar CSEDS.pdf" target="_blank">
+							<a href="/resume.pdf" target="_blank">
 								View Resume
 							</a>
 						</Button>
